@@ -31,7 +31,7 @@ services:
       dspace__P__dir: /dspace
       dspace__P__server__P__url: http://localhost:8080/server
       dspace__P__ui__P__url: http://localhost:4000
-      dspace__P__name: 'DSpace Started with Docker Compose'
+      dspace__P__name: 'Repositório Digital - IESCFAG'
       # db.url: Ensure we are using the 'dspacedb' image for our database
       db__P__url: 'jdbc:postgresql://dspacedb:5432/dspace'
       # solr.server: Ensure we are using the 'dspacesolr' image for Solr
@@ -39,7 +39,12 @@ services:
       # proxies.trusted.ipranges: This setting is required for a REST API running in Docker to trust requests 
       # from the host machine. This IP range MUST correspond to the 'dspacenet' subnet defined above.
       proxies__P__trusted__P__ipranges: '172.23.0'
-    image: "${DOCKER_OWNER:-dspace}/dspace:${DSPACE_VER:-dspace-7_x-test}"
+      # These are all custom
+      default__P__language: 'pt-BR'
+      user__P__registration: false
+
+
+    image: "${DOCKER_OWNER:-dspace}/dspace:dspace-7.6.1"
     depends_on:
     - dspacedb
     networks:
@@ -69,6 +74,7 @@ services:
     container_name: dspacedb
     environment:
       PGDATA: /pgdata
+      POSTGRES_HOST_AUTH_METHOD: trust 
     image: dspace/dspace-postgres-pgcrypto
     networks:
       dspacenet:

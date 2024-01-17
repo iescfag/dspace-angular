@@ -56,12 +56,6 @@ export class AuthNavMenuComponent implements OnInit {
 
     this.user = this.authService.getAuthenticatedUserFromStore();
 
-    this.showAuth = this.store.pipe(
-      select(routerStateSelector),
-      filter((router: RouterReducerState) => isNotUndefined(router) && isNotUndefined(router.state)),
-      map((router: RouterReducerState) => (!router.state.url.startsWith(LOGIN_ROUTE)
-        && !router.state.url.startsWith(LOGOUT_ROUTE))
-      )
-    );
+    this.showAuth = this.store.pipe(select(isAuthenticated))
   }
 }

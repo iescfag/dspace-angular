@@ -2,7 +2,7 @@
   class="navbar navbar-expand-md navbar-light p-0 navbar-container" role="navigation" [attr.aria-label]="'nav.main.description' | translate">
   <div class="navbar-inner-container w-100 h-100" [class.container]="!(isXsOrSm$ | async)">
     <a class="navbar-brand my-2" routerLink="/home">
-      <img src="assets/images/dspace-logo.svg" [attr.alt]="'menu.header.image.logo' | translate" />
+      <img src="https://iescfag.edu.br/static/img/brand-logo/logo.png" [attr.alt]="'menu.header.image.logo' | translate" />
     </a>
 
     <div id="collapsingNav" class="w-100 h-100">
@@ -17,7 +17,7 @@
     </div>
     <div class="navbar-buttons d-flex align-items-center gapx-1">
       <ds-themed-search-navbar class="navbar-collapsed"></ds-themed-search-navbar>
-      <ds-themed-lang-switch class="navbar-collapsed"></ds-themed-lang-switch>
+      <!--<ds-themed-lang-switch class="navbar-collapsed"></ds-themed-lang-switch>-->
       <ds-context-help-toggle class="navbar-collapsed"></ds-context-help-toggle>
       <ds-themed-auth-nav-menu class="navbar-collapsed"></ds-themed-auth-nav-menu>
       <ds-impersonate-navbar class="navbar-collapsed"></ds-impersonate-navbar>

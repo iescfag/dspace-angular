@@ -1170,7 +1170,7 @@
   "browse.comcol.by.subject": "Por Assunto",
 
   // "browse.comcol.by.srsc": "By Subject Category", (Auto-Translated)
-  "browse.comcol.by.srsc": "Por categoria de assunto",
+  "browse.comcol.by.srsc": "Por Categoria de Assunto",
 
   // "browse.comcol.by.nsi": "By Norwegian Science Index", (Auto-Translated)
   "browse.comcol.by.nsi": "Pelo Índice de Ciências Norueguesas",
@@ -2208,7 +2208,7 @@
   "dso-selector.set-scope.community.head": "Selecione um escopo de pesquisa",
 
   // "dso-selector.set-scope.community.button": "Search all of DSpace",
-  "dso-selector.set-scope.community.button": "Pesquisar em todo o DSpace",
+  "dso-selector.set-scope.community.button": "Pesquisar em todo o repositório",
 
   // "dso-selector.set-scope.community.or-divider": "or", (Auto-Translated)
   "dso-selector.set-scope.community.or-divider": "ou",
@@ -2764,7 +2764,7 @@
   "home.title": "Início",
 
   // "home.top-level-communities.head": "Communities in DSpace",
-  "home.top-level-communities.head": "Comunidades no DSpace",
+  "home.top-level-communities.head": "Comunidades no repositório",
 
   // "home.top-level-communities.help": "Select a community to browse its collections.",
   "home.top-level-communities.help": "Selecione uma comunidade para navegar por suas coleções",
@@ -4231,7 +4231,7 @@
   "menu.section.browse_community_by_title": "Por Título",
 
   // "menu.section.browse_global": "All of DSpace",
-  "menu.section.browse_global": "Tudo no DSpace",
+  "menu.section.browse_global": "Tudo no Repositório",
 
   // "menu.section.browse_global_by_author": "By Author",
   "menu.section.browse_global_by_author": "Por Autor",
@@ -4564,7 +4564,7 @@
   "mydspace.view-btn": "Ver",
 
   // "nav.browse.header": "All of DSpace",
-  "nav.browse.header": "Tudo no DSpace",
+  "nav.browse.header": "Tudo no Repositório",
 
   // "nav.community-browse.header": "By Community",
   "nav.community-browse.header": "Por Comunidade",
@@ -5128,7 +5128,7 @@
   "register-page.registration.header": "Novo registro de usuário",
 
   // "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
-  "register-page.registration.info": "Registre uma conta para assinar coleções para atualizações por e-mail e enviar novos itens para o DSpace.",
+  "register-page.registration.info": "Registre uma conta para assinar coleções para atualizações por e-mail e enviar novos itens para o Repositório.",
 
   // "register-page.registration.email": "Email Address *",
   "register-page.registration.email": "Endereço de Email  *",
@@ -5767,7 +5767,7 @@
   "search.form.search_dspace": "Todo o repositório",
 
   // "search.form.scope.all": "All of DSpace",
-  "search.form.scope.all": "Todo o DSpace",
+  "search.form.scope.all": "Todo o Repositório",
 
   // "search.results.head": "Search Results",
   "search.results.head": "Resultados de Busca",
@@ -5968,7 +5968,7 @@
   "submission.import-external.title.none": "Importar metadados de uma fonte externa",
 
   // "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to DSpace.",
-  "submission.import-external.page.hint": "Insira uma consulta acima para encontrar itens da web para importar para o DSpace.",
+  "submission.import-external.page.hint": "Insira uma consulta acima para encontrar itens da web para importar para o Repositório.",
 
   // "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
   "submission.import-external.back-to-my-dspace": "Voltar para o MeuDSpace",
