@@ -3,3 +3,19 @@ rest:
   host: sandbox.dspace.org
   port: 443
   nameSpace: /server
+
+defaultLanguage: pt-BR
+languages:
+  - code: en
+    label: English
+    active: true
+  - code: pt-BR
+    label: Português do Brasil
+    active: true
+
+browseBy:
+  showThumbnails: false
+
+info:
+  enableEndUserAgreement: false
+  enablePrivacyStatement: false

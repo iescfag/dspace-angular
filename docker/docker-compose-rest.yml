@@ -28,10 +28,9 @@ services:
       # __D__ => "-" (e.g. google__D__metadata => google-metadata)
       # dspace.dir, dspace.server.url, dspace.ui.url and dspace.name
       dspace__P__dir: /dspace
-      # Uncomment to set a non-default value for dspace.server.url or dspace.ui.url
-      # dspace__P__server__P__url: http://localhost:8080/server
-      # dspace__P__ui__P__url: http://localhost:4000
-      dspace__P__name: 'DSpace Started with Docker Compose'
+      dspace__P__server__P__url: http://localhost:8080/server
+      dspace__P__ui__P__url: http://localhost:4000
+      dspace__P__name: 'Repositório Digital - IESCFAG'
       # db.url: Ensure we are using the 'dspacedb' image for our database
       db__P__url: 'jdbc:postgresql://dspacedb:5432/dspace'
       # solr.server: Ensure we are using the 'dspacesolr' image for Solr
@@ -39,8 +38,12 @@ services:
       # proxies.trusted.ipranges: This setting is required for a REST API running in Docker to trust requests 
       # from the host machine. This IP range MUST correspond to the 'dspacenet' subnet defined above.
       proxies__P__trusted__P__ipranges: '172.23.0'
-      LOGGING_CONFIG: /dspace/config/log4j2-container.xml
-    image: "${DOCKER_REGISTRY:-docker.io}/${DOCKER_OWNER:-dspace}/dspace:${DSPACE_VER:-latest-test}"
+      # These are all custom
+      default__P__language: 'pt-BR'
+      user__P__registration: false
+
+
+    image: "${DOCKER_REGISTRY:-docker.io}/${DOCKER_OWNER:-dspace}/dspace:dspace-9.0"
     depends_on:
     - dspacedb
     networks:
@@ -71,7 +74,8 @@ services:
     image: "${DOCKER_REGISTRY:-docker.io}/${DOCKER_OWNER:-dspace}/dspace-postgres-pgcrypto:${DSPACE_VER:-latest}"
     environment:
       PGDATA: /pgdata
-      POSTGRES_PASSWORD: dspace
+      POSTGRES_HOST_AUTH_METHOD: trust 
+    image: dspace/dspace-postgres-pgcrypto
     networks:
       - dspacenet
     ports:

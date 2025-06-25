@@ -1,6 +1,7 @@
 <ds-metadata-field-wrapper [label]="label">
   @for (objectPage of objects; track objectPage; let i = $index) {
-    <ng-container *ngVar="(objectPage | async) as representations">
+    <ng-container *ngVar="(objectPage | async) as baseRepresentations">
+      @let representations = label === 'Autores' ? baseRepresentations.slice(0, -1) : baseRepresentations;
       @for (rep of representations; track rep) {
         <ds-metadata-representation-loader
           [mdRepresentation]="rep">
@@ -28,3 +29,4 @@
     </ng-container>
   }
 </ds-metadata-field-wrapper>
+<!-- TODO: Orientador -->
