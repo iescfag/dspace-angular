@@ -4,6 +4,7 @@ rest:
   port: 8080
   nameSpace: /server
 
+defaultLanguage: pt-BR
 languages:
   - code: en
     label: English
@@ -11,3 +12,10 @@ languages:
   - code: pt-BR
     label: Português do Brasil
     active: true
+
+browseBy:
+  showThumbnails: false
+
+info:
+  enableEndUserAgreement: false
+  enablePrivacyStatement: false
