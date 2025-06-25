@@ -106,6 +106,6 @@ export class AuthNavMenuComponent implements OnInit {
 
     this.user = this.authService.getAuthenticatedUserFromStore();
 
-    this.showAuth = this.store.pipe(select(isAuthenticated))
+    this.showAuth$ = this.store.pipe(select(isAuthenticated))
   }
 }
